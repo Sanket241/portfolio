@@ -251,27 +251,27 @@ span {
 
     0%,
     20% {
-        content: "Loading.";
+        content: "Good Human";
     }
 
     21%,
     40% {
-        content: "Loading..";
+        content: "Full Stack Developer";
     }
 
     41%,
     60% {
-        content: "Loading...";
+        content: "Good Human";
     }
 
     61%,
     80% {
-        content: "Loading....";
+        content: "Full Stack Developer";
     }
 
     81%,
     100% {
-        content: "Loading.....";
+        content: "Good Human";
     }
 }
 
@@ -454,6 +454,61 @@ span {
     margin-top: 2rem;
 }
 
+.skills {
+    background-color: var(--bg-color);
+    ;
+    color: black;
+}
+
+.skills h2 {
+    margin-bottom: 5rem;
+    color: white;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2rem;
+    align-items: center;
+}
+
+.skills-box {
+    background-color: var(--main-color);
+    height: 100px;
+    border-radius: 3rem;
+    border: 5px solid transparent;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+.skills-box:hover {
+    border: 5px solid var(--main-color);
+    transform: scale(1.05);
+    color: black;
+    background: white;
+}
+
+.skills-box .skills-info {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    max-height: 200px;
+    justify-content: left;
+    align-items: baseline;
+    padding: 3rem 5rem;
+}
+
+.skills-info h1{
+    font-size: 2.6rem;
+    font-weight: 600;
+    max-height: 100px;
+    line-height: 1.7;
+    margin: auto;
+}
+
+
+
+
 .projects {
     background-color: var(--bg-color);
     ;
@@ -467,7 +522,7 @@ span {
 
 .projects-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
     align-items: center;
 }
@@ -688,6 +743,9 @@ span {
     }
 
     .projects-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .skills-container {
         grid-template-columns: repeat(1, 1fr);
     }
 
