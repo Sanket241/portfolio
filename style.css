@@ -498,7 +498,7 @@ span {
     padding: 3rem 5rem;
 }
 
-.skills-info h1{
+.skills-info h1 {
     font-size: 2.6rem;
     font-weight: 600;
     max-height: 100px;
@@ -552,12 +552,22 @@ span {
     align-items: baseline;
     padding: 5rem 5rem;
 }
-.project-info h4{
+
+.project-info h4 {
     font-size: 3rem;
     font-weight: 800;
     line-height: 2;
 }
-.project-info p{
+
+.project-info .link {
+    color: white;
+}
+
+.project-info .link:hover {
+    color: #0599d3;
+}
+
+.project-info p {
     font-size: 1.6rem;
     font-weight: 600;
     max-height: 100px;
@@ -745,6 +755,7 @@ span {
     .projects-container {
         grid-template-columns: repeat(1, 1fr);
     }
+
     .skills-container {
         grid-template-columns: repeat(1, 1fr);
     }
