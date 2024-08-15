@@ -506,7 +506,72 @@ span {
     margin: auto;
 }
 
+.experience {
+    background-color: var(--bg-color);
+    ;
+    color: black;
+}
 
+.experience h2 {
+    margin-bottom: 5rem;
+    color: white;
+}
+
+.experience-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    margin-left: 25%;
+}
+.experience-box {
+    background-color: var(--main-color);
+    height: 300px;
+    border-radius: 3rem;
+    border: 5px solid transparent;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+.experience-box:hover {
+    border: 5px solid var(--main-color);
+    transform: scale(1.05);
+    color: black;
+    background: white;
+}
+
+
+.experience-box .experience-info {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    max-height: 200px;
+    justify-content: left;
+    align-items: baseline;
+    padding: 5rem 5rem;
+}
+
+.experience-info h4 {
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 2;
+}
+
+.experience-info .link {
+    color: rgb(14, 14, 14);
+}
+
+.experience-info .link:hover {
+    color: #0599d3;
+}
+
+.experience-info p {
+    font-size: 1.6rem;
+    font-weight: 600;
+    max-height: 100px;
+    line-height: 1.7;
+    margin: auto;
+}
 
 
 .projects {
@@ -560,7 +625,7 @@ span {
 }
 
 .project-info .link {
-    color: white;
+    color: rgb(14, 14, 14);
 }
 
 .project-info .link:hover {
