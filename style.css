@@ -577,7 +577,7 @@ span {
 .experience {
     background-color: var(--bg-color);
     ;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 .experience h2 {
