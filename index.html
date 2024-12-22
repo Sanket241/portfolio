@@ -1,277 +1,629 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Sanket Sharma | Software Engineer</title>
     <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
-
 <body>
+    <!-- Navigation -->
     <header class="header">
-        <a href="#home" class="logo">SANKET
-            <span>SHARMA</span>
-        </a>
-
-        <!-- menu bar -->
-        <i class='bx bx-menu' id="menu-icon"></i>
-
-
-
         <nav class="navbar">
-            <a href="#home" class="active">Home</a>
-            <a href="#education">Education</a>
-            <a href="#skills">Skills</a>
-            <a href="#experience">Experience</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
+            <div class="nav-container">
+                <div class="nav-left">
+                    <a href="#home" class="nav-logo">
+                        <span class="logo-text">SS</span>
+                        <span class="logo-dot"></span>
+                    </a>
+                </div>
+
+                <div class="nav-center">
+                    <ul class="nav-menu">
+                        <li class="nav-item">
+                            <a href="#home" class="nav-link active">
+                                <i class="fas fa-home"></i>
+                                <span>Home</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#education" class="nav-link">
+                                <i class="fas fa-graduation-cap"></i>
+                                <span>Education</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#skills" class="nav-link">
+                                <i class="fas fa-code"></i>
+                                <span>Skills</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#experience" class="nav-link">
+                                <i class="fas fa-briefcase"></i>
+                                <span>Experience</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#projects" class="nav-link">
+                                <i class="fas fa-project-diagram"></i>
+                                <span>Projects</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contact" class="nav-link">
+                                <i class="fas fa-envelope"></i>
+                                <span>Contact</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="nav-right">
+                    <div class="nav-socials">
+                        <a href="https://github.com/Sanket241" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://leetcode.com/u/isanket_23/" target="_blank" class="social-link">
+                            <i class="fas fa-code"></i>
+                        </a>
+                        <a href="https://x.com/Sankets_" target="_blank" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                    
+                    <button class="theme-toggle">
+                        <i class="fas fa-sun"></i>
+                        <i class="fas fa-moon"></i>
+                    </button>
+
+                    <button class="mobile-menu-toggle">
+                        <span class="toggle-line"></span>
+                        <span class="toggle-line"></span>
+                        <span class="toggle-line"></span>
+                    </button>
+                </div>
+            </div>
         </nav>
+
+        <!-- Mobile Navigation Menu -->
+        <div class="mobile-menu">
+            <div class="mobile-menu-header">
+                <a href="#home" class="nav-logo">
+                    <span class="logo-text">SS</span>
+                    <span class="logo-dot"></span>
+                </a>
+                <button class="mobile-menu-close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            
+            <ul class="mobile-nav-menu">
+                <li class="mobile-nav-item">
+                    <a href="#home" class="mobile-nav-link active">
+                        <i class="fas fa-home"></i>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li class="mobile-nav-item">
+                    <a href="#education" class="mobile-nav-link">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>Education</span>
+                    </a>
+                </li>
+                <li class="mobile-nav-item">
+                    <a href="#skills" class="mobile-nav-link">
+                        <i class="fas fa-code"></i>
+                        <span>Skills</span>
+                    </a>
+                </li>
+                <li class="mobile-nav-item">
+                    <a href="#experience" class="mobile-nav-link">
+                        <i class="fas fa-briefcase"></i>
+                        <span>Experience</span>
+                    </a>
+                </li>
+                <li class="mobile-nav-item">
+                    <a href="#projects" class="mobile-nav-link">
+                        <i class="fas fa-project-diagram"></i>
+                        <span>Projects</span>
+                    </a>
+                </li>
+                <li class="mobile-nav-item">
+                    <a href="#contact" class="mobile-nav-link">
+                        <i class="fas fa-envelope"></i>
+                        <span>Contact</span>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="mobile-menu-footer">
+                <div class="mobile-socials">
+                    <a href="https://github.com/Sanket241" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://leetcode.com/u/isanket_23/" target="_blank" class="social-link">
+                        <i class="fas fa-code"></i>
+                    </a>
+                    <a href="https://x.com/Sankets_" target="_blank" class="social-link">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
     </header>
 
-    <section class="home" id="home">
-        <div class="home-content">
-            <h1>Hi, It's <span>Sanket Sharma</span></h1>
-            <h3 class="text-animation">I'm a <span></span></h3>
-            <p>Passionate about MERN and Web3, where MongoDB, Express.js, React, Node.js, and blockchain converge. Thriving on the excitement of crafting seamless web applications and decentralized solutions, my journey with MERN and Web3 is an exploration of innovation and code.</p>
-            <div class="social-icons">
-                <a href="https://www.linkedin.com/in/sanket-sharma-4b6977209/"><i class="bi bi-linkedin"></i></a>
-                <a href="https://twitter.com/Sankets_"><i class="bi bi-twitter-x"></i></a>
-                <a href="https://github.com/Sanket241"><i class="bi bi-github"></i></a>
-                <a href="#"><i class="bi bi-instagram"></i></a>
-            </div>
-            <div class="btn-group">
-                <a href="https://drive.google.com/file/d/12r2T3ZVeVFrj5VXfujIOXsLpkifthI2Y/view?usp=sharing" class="btn" >Resume</a>
-                <!-- <a href="#contact" class="btn">Contact</a> -->
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="text-gradient">Sanket Sharma</span> 
+                    </h1>
+                    <div class="hero-subtitle">
+                        <span class="typing-text"></span><span class="typing-cursor">|</span>
+                    </div>
+                    <p class="hero-description">
+                        Passionate about creating elegant solutions to complex problems.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Get in Touch
+                        </a>
+                        <a href="#projects" class="btn btn-outline">
+                            <i class="fas fa-code"></i>
+                            View Projects
+                        </a>
+                        <a href="assets/resume.pdf" class="btn btn-outline" download>
+                            <i class="fas fa-download"></i>
+                            Download CV
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
-
-    </section>
-
-    <section class="education" id="education">
-        <h2 class="heading">Education</h2>
-
-        <div class="timeline-items">
-
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <!-- <div class="timeline-date">2025</div> -->
-                <div class="timeline-content">
-                    <h3> Bachelor of Technology</h3>
-                    <h3>2022 - 2025</h3>
-                    <p>Exploring the Art of Code: Journey through my portfolio, where innovation meets elegance. Let's build the future together, one line of code at a time. 🚀💻 #TechEnthusiast #WebDeveloper #Innovation</p>
-                </div>
-
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <!-- <div class="timeline-date">2022</div> -->
-                <div class="timeline-content">
-                    <h3>Diploma in Electrical Enginner</h3>
-                    <h3>2019 - 2022</h3>
-                    <p>Diploma holder passionate about innovation and technology. Let's illuminate the world together!⚡</p>
-                </div>
-            </div>
-
-            <!-- <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-date">2022</div>
-                <div class="timeline-content">
-                    <h3>Diploma in Electrical Enginner</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa vitae nemo, saepe mollitia animi
-                        alias ex quas est laboriosam deserunt.</p>
-                </div>
-            </div> -->
+        <div class="scroll-down">
+            <span>Scroll Down</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="hero-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="grid-overlay"></div>
         </div>
     </section>
 
+    <!-- Education Section -->
+    <section id="education" class="education-section">
+        <div class="education-container">
+            <h2 class="section-title">Education</h2>
+            <p class="section-subtitle">My academic journey</p>
+            
+            <div class="education-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>B.Tech in Computer Science</h3>
+                        <p>Dr. A. P. J. Abdul Kalam Technical University, Lucknow</p>
+                        <p>September 2022 – June 2025</p>
+                    </div>
+                    <div class="timeline-dot"></div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Diploma in Electrical Engineering</h3>
+                        <p>Dayalbagh Educational Institute, Agra</p>
+                        <p>September 2019 – June 2022</p>
+                    </div>
+                    <div class="timeline-dot"></div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <section class="skills" id="skills">
-        <h2 class="heading">Skills</h2>
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
         <div class="skills-container">
-            <div class="skills-box">
-                <div class="skills-info">
-                   <h1>HTML</h1>
-                </div>
-            </div>
-            <div class="skills-box">
-                <div class="skills-info">
-                   <h1>CSS</h1>
-                </div>
-            </div>
-            <div class="skills-box">
-                <div class="skills-info">
-                   <h1>C/C++</h1>
-                </div>
-            </div>
-            <div class="skills-box">
-                <div class="skills-info">
-                   <h1>Javascript</h1>
-                </div>
-            </div>
-            <div class="skills-box">
-                <div class="skills-info">
-                   <h1>React.js</h1>
-                </div>
-            </div>
-            <div class="skills-box">
-                <div class="skills-info">
-                   <h1>MongoDB</h1>
-                </div>
-            </div>
-            <div class="skills-box">
-                <div class="skills-info">
-                   <h1>Express.js</h1>
-                </div>
-            </div>
-            <div class="skills-box">
-                <div class="skills-info">
-                   <h1>Node.js</h1>
-                </div>
-            </div>
-            <div class="skills-box">
-                <div class="skills-info">
-                   <h1>REDUX</h1>
-                </div>
-            </div>
-            <div class="skills-box">
-                <div class="skills-info">
-                   <h1>Postman</h1>
-                </div>
-            </div>
-            <div class="skills-box">
-                <div class="skills-info">
-                   <h1>Solidity</h1>
-                </div>
-            </div>
-            <div class="skills-box">
-                <div class="skills-info">
-                   <h1>Foundry</h1>
-                </div>
-            </div>
-            <div class="skills-box">
-                <div class="skills-info">
-                   <h1>Git</h1>
-                </div>
-            </div>
-            <div class="skills-box">
-                <div class="skills-info">
-                   <h1>Github</h1>
-                </div>
-            </div>
-            <div class="skills-box">
-                <div class="skills-info">
-                   <h1>Agile</h1>
-                </div>
-            </div>
-           
-           
-           
-        </div>
-
-    </section>
-
-
-   
-
-    <section class="experience" id="experience">
-        <h2 class="heading">Experience</h2>
-        <div class="experience-container">
-            <div class="experience-box">
-                <div class="experience-info">
-                    <h4>Vocational Summer Training at India Army Workshop <a href="https://bytestories.onrender.com" target="_blank"><i class='bx bx-link-external link'></i></a></h4>
-                    <p>Led the development of a blockchain-based DecentralizedBox to securely upload and store documents such as images on IPFS, ensuring only authorized admins could upload data.</p>
-                  
-                </div>
-            </div>
+            <h2 class="section-title">Skills</h2>
+            <p class="section-subtitle">What I bring to the table</p>
             
-            
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="skill-header">
+                        <i class="fas fa-code"></i>
+                        <h3>Frontend Development</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>React.js</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>JavaScript</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>HTML/CSS</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>UI/UX Design</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-header">
+                        <i class="fas fa-server"></i>
+                        <h3>Backend Development</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Node.js</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Express.js</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>MongoDB</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Firebase</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-header">
+                        <i class="fas fa-laptop-code"></i>
+                        <h3>Programming & Tools</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>C++</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Problem Solving</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Git & GitHub</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Web3 & IPFS</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-header">
+                        <i class="fas fa-users"></i>
+                        <h3>Soft Skills</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Team Collaboration</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Communication</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Adaptability</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Problem-Solving</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section class="project" id="projects">
-        <h2 class="heading">Projects</h2>
-        <div class="projects-container">
-            <div class="project-box">
-                <div class="project-info">
-                    <h4>ByteStories <a href="https://bytestories.onrender.com" target="_blank"><i class='bx bx-link-external link'></i></a></h4>
-                    <p>Welcome to ByteStories, where imagination runs wild and creativity knows no bounds! We're not just another blogging website; we're a magical realm where words dance, ideas flourish, and laughter echoes through the digital corridors. 🎉</p>
-                  
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="experience-grid">
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <div class="experience-info">
+                            <h3>Vocational Summer Internship</h3>
+                            <p>509 Indian Army Workshop, Agra</p>
+                            <span class="experience-date">July 2024 – August 2024</span>
+                        </div>
+                    </div>
+                    <ul class="experience-details">
+                        <li>Developed DecentralizedBox, a blockchain-based document storage system with secure admin authentication using Web3 tools and Pinata's API for IPFS integration.</li>
+                    </ul>
+                    <div class="project-links">
+                        <a href="https://decentralizedbox.onrender.com/" target="_blank" class="project-link">
+                            <i class="fas fa-external-link-alt"></i>
+                            Live Demo
+                        </a>
+                        <a href="https://github.com/Sanket241/DecentralizedBox" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i>
+                            Frontend Repo
+                        </a>
+                        <a href="https://github.com/Sanket241/DecentralizedBox-Blockchainn" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i>
+                            Backend Repo
+                        </a>
+                    </div>
                 </div>
             </div>
-            <div class="project-box">
-                <div class="project-info">
-                    <h4>PropertyEstate <a href="https://propertyestate.onrender.com" target="_blank"><i class='bx bx-link-external link'></i></a></h4>
-                    <p>PropertyEstate is a full-stack web platform for real estate listings, built using the MERN stack. It leverages React-Redux and Redux Toolkit for state management to provide a seamless user experience.</p>
-                  
-                </div>
-            </div>
-            <div class="project-box">
-                <div class="project-info">
-                    <h4>ATTIRE: Fashion Destination <a href="https://github.com/Sanket241/ATTIRE" target="_blank"><i class='bx bx-link-external link'></i></a> </h4>
-                    <p>Welcome to ATTIRE, your ultimate fashion destination! ATTIRE is a sleek and modern e-commerce platform built on the React framework. Offering a seamless shopping experience</p>
-                    <!-- <div class="social-icons "><a href="https://github.com/Sanket241/PropertyEstate"><i class='bx bxl-github'></i></a></div> -->
-                </div>
-            </div>
-            <!-- <div class="project-box">
-                <div class="project-info">
-                    <h4>third</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt iusto porro autem libero ex,
-                        nisi laboriosam cum non nostrum officiis.</p>
-                </div>
-            </div> -->
-            
         </div>
     </section>
 
-    <section class="contact" id="contact">
-        <h2 class="heading">Contact <span>Me</span>
-        </h2>
-        <form action="https://formspree.io/f/xoqgylvd" method="POST">
-            <div class="input-group">
-                <div class="input-box">
-                    <input type="text" name="text" placeholder="Full Name">
-                    <input type="email" name="email" placeholder="Email">
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>PropertyEstate</h3>
+                        <p class="project-description">
+                            A full-stack real estate platform built with MERN stack (MongoDB, Express.js, React.js, Node.js). 
+                            Features include user authentication, property listing management, and an interactive UI for enhanced user experience.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React.js</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Express.js</span>
+                            <span class="tech-tag">JWT Auth</span>
+                        </div>
+                        <div class="project-features">
+                            <ul>
+                                <li>User authentication and authorization</li>
+                                <li>Property listing and management</li>
+                                <li>Advanced search and filtering</li>
+                                <li>Responsive design for all devices</li>
+                            </ul>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://propertyestate.onrender.com/" target="_blank" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                                Live Demo
+                            </a>
+                            <a href="https://github.com/Sanket241/PropertyEstate" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                                Source Code
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <div class="input-box">
-                    <input type="number" name="number" placeholder="Phone NUmber">
-                    <input type="text" name="number" placeholder="Subject">
-                </div>
-            </div>
-            <div class="input-group-2">
-                <textarea name="" id="" cols="" rows="10" name="textarea" placeholder="Your Message"></textarea>
-                <input type="submit" name="textarea" value="Send Message" class="btn">
 
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>ByteStories</h3>
+                        <p class="project-description">
+                            A dynamic content-sharing platform built with React.js and Firebase. 
+                            Enables users to share blogs, news, and stories with real-time updates and responsive design.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React.js</span>
+                            <span class="tech-tag">Firebase</span>
+                            <span class="tech-tag">Real-time DB</span>
+                            <span class="tech-tag">Authentication</span>
+                        </div>
+                        <div class="project-features">
+                            <ul>
+                                <li>Real-time content updates</li>
+                                <li>User authentication</li>
+                                <li>Responsive design</li>
+                                <li>Interactive user interface</li>
+                            </ul>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://bytestories.onrender.com/" target="_blank" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                                Live Demo
+                            </a>
+                            <a href="https://github.com/Sanket241/ByteStories" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                                Source Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </form>
+        </div>
     </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Contact Me</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div class="info">
+                            <h3>Email</h3>
+                            <p>sanketsharma241@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div class="info">
+                            <h3>Phone</h3>
+                            <p>+91 9027440878</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="info">
+                            <h3>Location</h3>
+                            <p>Agra, Uttar Pradesh, India</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form action="https://formspree.io/f/xoqgylvd" method="POST">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer class="footer">
-        <div class="social">
-            <a href="#"><i class="bi bi-linkedin"></i></a>
-            <a href="#"><i class="bi bi-twitter-x"></i></a>
-            <a href="#"><i class="bi bi-github"></i></a>
-            <a href="#"><i class="bi bi-instagram"></i></a>
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Navigation</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home" class="footer-link">Home</a></li>
+                        <li><a href="#education" class="footer-link">Education</a></li>
+                        <li><a href="#skills" class="footer-link">Skills</a></li>
+                        <li><a href="#projects" class="footer-link">Projects</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Social</h3>
+                    <ul class="footer-links">
+                        <li><a href="https://github.com/Sanket241" target="_blank" class="footer-link">GitHub</a></li>
+                        <li><a href="https://leetcode.com/u/isanket_23/" target="_blank" class="footer-link">LeetCode</a></li>
+                        <li><a href="https://x.com/Sankets_" target="_blank" class="footer-link">X (Twitter)</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact</h3>
+                    <ul class="footer-links">
+                        <li class="footer-link">Agra, Uttar Pradesh, India</li>
+                        <li class="footer-link">sanketsharma241@gmail.com</li>
+                        <li class="footer-link">+91 9027440878</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Let's Connect</h3>
+                    <p class="footer-text">Open for freelance projects and full-time opportunities.</p>
+                    <a href="#contact" class="btn btn-outline">Get In Touch</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Sanket Sharma. All rights reserved.</p>
+            </div>
         </div>
-        <ul class="list">
-            <li>
-                <a href="#">FAQ</a>
-            </li>
-            <li>
-                <a href="#">About Me</a>
-            </li>
-            <li>
-                <a href="#">Contact</a>
-            </li>
-        </ul>
-        <p class="copyright">Sanket Sharma | All Rights Reserved</p>
     </footer>
+    <script src="script.js"></script>
 </body>
-<script src="script.js">
-
-</script>
-
 </html>
