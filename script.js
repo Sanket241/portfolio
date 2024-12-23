@@ -1,10 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Typing Animation
     const roles = [
-        "Building Modern Web Apps",
-        "Creating Web3 Solutions",
-        "Designing User Interfaces",
-        "Developing MERN Stack Apps"
+        "A compassionate and driven individual",
+        "Crafting Intuitive User Interfaces",
+        "Developing Scalable MERN Stack Applications",
+        "Building Responsive and Modern Web Applications",
     ];
     let roleIndex = 0;
     let charIndex = 0;
