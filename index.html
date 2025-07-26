@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sanket Sharma | Software Engineer</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <!-- Navigation -->
-    <header class="header">
+    <header ader class="header">
         <nav class="navbar">
             <div class="nav-container">
                 <div class="nav-left">
@@ -20,7 +23,7 @@
                     </a>
                 </div>
 
-                <div class="nav-center">
+                <div class="nav-center desktop-only">
                     <ul class="nav-menu">
                         <li class="nav-item">
                             <a href="#home" class="nav-link active">
@@ -73,7 +76,7 @@
                             <i class="fab fa-twitter"></i>
                         </a>
                     </div>
-                    
+
                     <button class="theme-toggle">
                         <i class="fas fa-sun"></i>
                         <i class="fas fa-moon"></i>
@@ -95,11 +98,11 @@
                     <span class="logo-text">SS</span>
                     <span class="logo-dot"></span>
                 </a>
-                <button class="mobile-menu-close">
+                <!-- <button class="mobile-menu-close">
                     <i class="fas fa-times"></i>
-                </button>
+                </button> -->
             </div>
-            
+
             <ul class="mobile-nav-menu">
                 <li class="mobile-nav-item">
                     <a href="#home" class="mobile-nav-link active">
@@ -161,7 +164,7 @@
             <div class="hero-content">
                 <div class="hero-text">
                     <h1 class="hero-title">
-                        Hi, I'm <span class="text-gradient">Sanket Sharma</span> 
+                        Hi, I'm <span class="text-gradient">Sanket Sharma</span>
                     </h1>
                     <div class="hero-subtitle">
                         <span class="typing-text"></span><span class="typing-cursor">|</span>
@@ -178,7 +181,8 @@
                             <i class="fas fa-code"></i>
                             View Projects
                         </a>
-                        <a href="https://drive.google.com/file/d/13Hi9eqCitZX9nZY5XIDbkfHqtqP4QcMC/view?usp=sharing" class="btn btn-outline" download>
+                        <a href="https://drive.google.com/file/d/1ITLk6WNI6t0jFk8rXnvB_6DnCuIHXF4g/view?usp=sharing"
+                            class="btn btn-outline" download>
                             <i class="fas fa-download"></i>
                             Download CV
                         </a>
@@ -203,7 +207,7 @@
         <div class="education-container">
             <h2 class="section-title">Education</h2>
             <p class="section-subtitle">My academic journey</p>
-            
+
             <div class="education-timeline">
                 <div class="timeline-item">
                     <div class="timeline-content">
@@ -213,7 +217,7 @@
                     </div>
                     <div class="timeline-dot"></div>
                 </div>
-                
+
                 <div class="timeline-item">
                     <div class="timeline-content">
                         <h3>Diploma in Electrical Engineering</h3>
@@ -231,7 +235,7 @@
         <div class="skills-container">
             <h2 class="section-title">Skills</h2>
             <p class="section-subtitle">What I bring to the table</p>
-            
+
             <div class="skills-grid">
                 <div class="skill-category">
                     <div class="skill-header">
@@ -313,7 +317,7 @@
                         </div>
                         <div class="skill-item">
                             <div class="skill-info">
-                                <span>Firebase</span>
+                                <span>PostgreSQL</span>
                                 <span>80%</span>
                             </div>
                             <div class="skill-bar">
@@ -358,7 +362,7 @@
                         </div>
                         <div class="skill-item">
                             <div class="skill-info">
-                                <span>Web3 & IPFS</span>
+                                <span>Linux</span>
                                 <span>75%</span>
                             </div>
                             <div class="skill-bar">
@@ -421,6 +425,28 @@
         <div class="container">
             <h2 class="section-title">Experience</h2>
             <div class="experience-grid">
+                <!-- New Experience Card: Oodles Technologies -->
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <div class="experience-info">
+                            <h3>Software Developer Intern</h3>
+                            <p>Oodles Technologies, Gurugram, Haryana</p>
+                            <span class="experience-date">April 2025 – Present</span>
+                        </div>
+                    </div>
+                    <ul class="experience-details">
+                        <li>Developed and implemented RESTful API endpoints for managing the WhatsApp account lifecycle
+                            using whatsapp-web.js, ensuring consistent response formatting and robust error handling
+                            throughout.</li>
+                        <li>Structured relational database schemas using Sequelize ORM, including timestamps, soft
+                            deletes (paranoid), and well-defined associations to ensure scalable data integrity.</li>
+                        <li>Diagnosed and resolved authentication and routing issues, enabling seamless frontend-backend
+                            integration and resolving persistent 401 Unauthorized errors.</li>
+                        <li>Created interactive API documentation using Swagger UI and orchestrated table initialization
+                            logic to enforce proper creation sequence and maintain referential consistency.</li>
+                    </ul>
+                </div>
+                <!-- ...existing experience cards... -->
                 <div class="experience-card">
                     <div class="experience-header">
                         <div class="experience-info">
@@ -430,7 +456,8 @@
                         </div>
                     </div>
                     <ul class="experience-details">
-                        <li>Developed DecentralizedBox, a blockchain-based document storage system with secure admin authentication using Web3 tools and Pinata's API for IPFS integration.</li>
+                        <li>Developed DecentralizedBox, a blockchain-based document storage system with secure admin
+                            authentication using Web3 tools and Pinata's API for IPFS integration.</li>
                     </ul>
                     <div class="project-links">
                         <a href="https://decentralizedbox.onrender.com/" target="_blank" class="project-link">
@@ -441,7 +468,8 @@
                             <i class="fab fa-github"></i>
                             Frontend Repo
                         </a>
-                        <a href="https://github.com/Sanket241/DecentralizedBox-Blockchainn" target="_blank" class="project-link">
+                        <a href="https://github.com/Sanket241/DecentralizedBox-Blockchainn" target="_blank"
+                            class="project-link">
                             <i class="fab fa-github"></i>
                             Backend Repo
                         </a>
@@ -460,8 +488,10 @@
                     <div class="project-content">
                         <h3>PropertyEstate</h3>
                         <p class="project-description">
-                            A full-stack real estate platform built with MERN stack (MongoDB, Express.js, React.js, Node.js). 
-                            Features include user authentication, property listing management, and an interactive UI for enhanced user experience.
+                            A full-stack real estate platform built with MERN stack (MongoDB, Express.js, React.js,
+                            Node.js).
+                            Features include user authentication, property listing management, and an interactive UI for
+                            enhanced user experience.
                         </p>
                         <div class="project-tech">
                             <span class="tech-tag">React.js</span>
@@ -495,8 +525,9 @@
                     <div class="project-content">
                         <h3>ByteStories</h3>
                         <p class="project-description">
-                            A dynamic content-sharing platform built with React.js and Firebase. 
-                            Enables users to share blogs, news, and stories with real-time updates and responsive design.
+                            A dynamic content-sharing platform built with React.js and Firebase.
+                            Enables users to share blogs, news, and stories with real-time updates and responsive
+                            design.
                         </p>
                         <div class="project-tech">
                             <span class="tech-tag">React.js</span>
@@ -601,7 +632,8 @@
                     <h3>Social</h3>
                     <ul class="footer-links">
                         <li><a href="https://github.com/Sanket241" target="_blank" class="footer-link">GitHub</a></li>
-                        <li><a href="https://leetcode.com/u/isanket_23/" target="_blank" class="footer-link">LeetCode</a></li>
+                        <li><a href="https://leetcode.com/u/isanket_23/" target="_blank"
+                                class="footer-link">LeetCode</a></li>
                         <li><a href="https://x.com/Sankets_" target="_blank" class="footer-link">X (Twitter)</a></li>
                     </ul>
                 </div>
@@ -626,4 +658,5 @@
     </footer>
     <script src="script.js"></script>
 </body>
+
 </html>

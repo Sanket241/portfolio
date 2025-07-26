@@ -67,11 +67,13 @@ document.addEventListener('DOMContentLoaded', () => {
     applyTheme(getInitialTheme());
 
     // Theme toggle click handler
-    themeToggle.addEventListener('click', () => {
-        const currentTheme = document.documentElement.getAttribute('data-theme');
-        const newTheme = currentTheme === 'light' ? 'dark' : 'light';
-        applyTheme(newTheme);
-    });
+    if (themeToggle) {
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+            applyTheme(newTheme);
+        });
+    }
 
     // Listen for system theme changes
     prefersDarkScheme.addEventListener('change', (e) => {
@@ -81,6 +83,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     function updateThemeIcon(theme) {
+        if (!themeToggle) return;
         const sunIcon = themeToggle.querySelector('.fa-sun');
         const moonIcon = themeToggle.querySelector('.fa-moon');
         
@@ -96,9 +99,10 @@ document.addEventListener('DOMContentLoaded', () => {
     // Mobile Menu Toggle
     const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
     const mobileMenu = document.querySelector('.mobile-menu');
-    const mobileMenuClose = document.querySelector('.mobile-menu-close');
 
     function toggleMobileMenu() {
+        if (!mobileMenu || !mobileMenuToggle) return;
+        
         const isOpen = mobileMenu.classList.contains('active');
         
         if (isOpen) {
@@ -112,8 +116,9 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    mobileMenuToggle.addEventListener('click', toggleMobileMenu);
-    mobileMenuClose?.addEventListener('click', toggleMobileMenu);
+    if (mobileMenuToggle) {
+        mobileMenuToggle.addEventListener('click', toggleMobileMenu);
+    }
 
     // Close mobile menu when clicking outside
     document.addEventListener('click', (e) => {
@@ -153,7 +158,6 @@ document.addEventListener('DOMContentLoaded', () => {
     if (contactForm) {
         contactForm.addEventListener('submit', (e) => {
             e.preventDefault();
-            // Add your form submission logic here
             const formData = new FormData(contactForm);
             console.log('Form submitted:', Object.fromEntries(formData));
             contactForm.reset();
@@ -222,10 +226,8 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         
         if (currentScroll > lastScroll && !header.classList.contains('hide')) {
-            // Scrolling down
             header.classList.add('hide');
         } else if (currentScroll < lastScroll && header.classList.contains('hide')) {
-            // Scrolling up
             header.classList.remove('hide');
         }
         
@@ -246,12 +248,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const targetElement = document.querySelector(targetId);
             if (targetElement) {
-                // Close mobile menu if open
                 if (mobileMenu?.classList.contains('active')) {
                     toggleMobileMenu();
                 }
 
-                // Smooth scroll to target
                 targetElement.scrollIntoView({
                     behavior: 'smooth',
                     block: 'start'
